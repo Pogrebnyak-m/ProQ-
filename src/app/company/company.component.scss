@@ -24,10 +24,13 @@
   letter-spacing: 0.03em;
   font-weight: 400;
 }
-.company_img{
+.company_img {
   position: absolute;
   margin-top: 2.5%;
   padding-bottom: 30px;
+}
+.company_container{
+  margin-bottom: 60px;
 }
 .company_text{
   color: #001B4A;
@@ -71,6 +74,12 @@
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.01em;
+  }
+  .company_container{
+    margin-bottom: 0;
+  }
+  .text_wrap{
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 768px) {

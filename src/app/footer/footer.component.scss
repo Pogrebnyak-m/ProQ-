@@ -10,7 +10,7 @@
   align-items: center;
 }
 .container{
-  margin: 60px 0;
+  margin: 30px 0;
 }
 .contact_text{
   color: #001B4A;
@@ -117,10 +117,14 @@ mat-form-field.mat-form-field {
     font-size: 29px;
     line-height: 31px;
     letter-spacing: 0.02em;
+    margin-bottom: 15px;
   }
   .contact_form{
     font-size: 10px;
     line-height: 13px;
+  }
+  .textarea_wrap{
+    margin-top: 20px;
   }
 }
 @media (max-width: 580px) {
@@ -129,12 +133,29 @@ mat-form-field.mat-form-field {
     line-height: 16px;
   }
   .contact_text{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 28px;
     letter-spacing: 0;
+    padding: 3px;
+    margin: auto 0;
+  }
+  .contact_info{
+    padding: 3px;
   }
   .contact_form{
     font-size: 7px;
     line-height: 9px;
+  }
+  .socials_item{
+    max-width: 15px;
+  }
+  .contact_form:last-child{
+    margin-bottom: 0;
+  }
+  .contact_container{
+    margin-bottom: 10px;
+  }
+  .textarea_wrap{
+    margin-top: 15px;
   }
 }
