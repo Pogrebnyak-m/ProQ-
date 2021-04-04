@@ -124,7 +124,7 @@
     padding-bottom: 0;
   }
   .group1{
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 0.1fr 1fr;
   }
   .text1{
     font-size: 13px;
@@ -146,9 +146,6 @@
   }
 }
 @media (max-width: 580px) {
-  .group1{
-    grid-template-columns: auto 1fr;
-  }
   .new_row_1{
     margin-bottom: 10px;
   }
