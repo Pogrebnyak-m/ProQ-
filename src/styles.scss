@@ -1,0 +1,69 @@
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config(
+  $font-family:'Montserrat',
+  $title: mat-typography-level(43px, 47px, Regular)
+);
+
+@include mat-core($custom-typography);
+
+$ProQ-primary: mat-palette($mat-indigo);
+$ProQ-accent: mat-palette($mat-cyan, 600);
+$ProQ-warn: mat-palette($mat-red);
+
+$ProQ-theme: mat-light-theme((
+  color: (
+    primary: $ProQ-primary,
+    accent: $ProQ-accent,
+    warn: $ProQ-warn,
+  )
+));
+@include angular-material-theme($ProQ-theme);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+/*@include angular-material-theme($ProQ-theme);*/
+
+@import url(scss/fonts.scss);
+@import url(scss/blocks/logoimg.scss);
+@import url(scss/blocks/logo.list.scss);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #001B4A;
+  overflow-wrap: break-word;
+  /*min-height: 100%;*/
+}
+
+.container{
+  max-width: 100%;
+  min-width: 320px;
+}
+.wrap{
+  max-width: 1500px;
+  min-width: 290px;
+  padding: 0 73px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .wrap{
+    padding: 0 30px;
+  }
+}
+/*html, body { height: 100%; }
+body { margin: 0; font-family: "Montserrat"; }*/
+
+/*
+@mixin custom-theme($theme) {
+  @include angular-material-theme($theme);
+  @include angular-root-theme($theme);
+  @include app-root-typography($custom-typography);
+
+}*/

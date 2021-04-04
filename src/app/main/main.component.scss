@@ -1,0 +1,32 @@
+.wrap_img {
+  background: url("../../assets/img/backgroundheader.svg") no-repeat center top;
+  max-width: 100%;
+  min-width: 320px;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+.header_info{
+  padding-top: 6%;
+  /*  padding-bottom: 60%;*/
+}
+.header_title{
+    font-size: 38px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+}
+@media (max-width: 980px) {
+  .header_title{
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+  }
+}
+@media (max-width: 580px) {
+  .header_title {
+    font-size: 29px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+  }
+}
