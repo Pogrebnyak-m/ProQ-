@@ -1,7 +1,7 @@
 .holder_wrap{
   max-width: 1500px;
   min-width: 290px;
-  padding: 0 73px;
+  padding: 5% 73px 3%;
   margin: 0 auto;
 }
 .customers_title{
@@ -54,7 +54,7 @@
 
 @media (max-width: 768px) {
   .holder_wrap{
-    padding: 0 30px;
+    padding:  5% 30px 3%;
   }
   .text{
     font-size: 29px;

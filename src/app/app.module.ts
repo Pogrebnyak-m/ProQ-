@@ -37,7 +37,7 @@ import { MatButtonModule } from '@angular/material/button';*/
     CompanyComponent,
     ClientsPartnersComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
