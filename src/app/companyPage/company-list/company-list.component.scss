@@ -1,0 +1,31 @@
+.company_list{
+  max-width: 100%;
+  min-width: 290px;
+}
+.company_wrap{
+  max-width: 100%;
+  min-width: 290px;
+  padding: 0 6%;
+}
+.text_wrap{
+padding: 3% 0;
+}
+.text{
+  color: #001B4A;
+  font-size: 27px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+.accordion-button{
+  color: #001B4A;
+  background-color: rgba(0, 27, 74, 0.08);
+}
+.accordion-body{
+  background-color: rgba(0, 27, 74, 0.08);
+}
+.accordion-item{
+  margin-bottom: 3%;
+  border: none;
+}
+
