@@ -4,7 +4,9 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 0;
-
+}
+.header_line{
+  padding-bottom: 0;
 }
 .menu_item{
   font-weight: 500;
@@ -70,10 +72,10 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 .header_top_wrap{
-  max-width: 1500px;
+  max-width: 100%;
   min-width: 290px;
-  padding: 0 73px;
-  margin: 0 auto;
+  padding: 0 6%;
+  margin: 0;
 }
 .header_top{
   display: grid;

@@ -1,16 +1,5 @@
-.footer{
-  max-width: 100%;
-  min-width: 320px;
-}
-.footer_wrap{
-  max-width: 1500px;
-  min-width: 290px;
-  padding: 0 73px;
-  margin: 0 auto;
-  align-items: center;
-}
-.container{
-  margin: 30px 0;
+.container-fluid{
+  padding: 4% 6%;
 }
 .contact_text{
   color: #001B4A;
@@ -19,12 +8,12 @@
   letter-spacing: 0.03em;
   text-align: left;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 3%;
 }
-.second_col{
+/*.second_col{
   text-align: right;
-}
-.contact_container{
+}*/
+/*.contact_container{
   color: #001B4A;
   font-size: 25px;
   line-height: 31px;
@@ -32,9 +21,9 @@
   text-align: left;
   font-weight: 500;
   margin-bottom: 40px;
-}
+}*/
 .contact_form{
-  margin-bottom: 20px;
+  margin-bottom: 4%;
   font-size: 17px;
   line-height: 21px;
   letter-spacing: 0.02em;
@@ -61,9 +50,9 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.form{
+/*.form{
   padding-left: 33%;
-}
+}*/
 .size-form {
   min-width: 100px;
   max-width: 300px;
@@ -74,7 +63,7 @@
   width: 100%;
 }
 .textarea_wrap{
- margin-top: 40px;
+ margin-top: 16%;
 }
 mat-form-field.mat-form-field {
   color: rgba(0, 27, 74, 0.25);
@@ -115,9 +104,6 @@ mat-form-field.mat-form-field {
   }
 }
 @media (max-width: 768px) {
-  .footer_wrap{
-    padding: 0 30px;
-  }
   mat-form-field.mat-form-field {
     font-size: 13px;
     line-height: 16px;
@@ -131,9 +117,6 @@ mat-form-field.mat-form-field {
   .contact_form{
     font-size: 10px;
     line-height: 13px;
-  }
-  .textarea_wrap{
-    margin-top: 20px;
   }
   .second_col{
     text-align: left;
@@ -169,8 +152,5 @@ mat-form-field.mat-form-field {
   }
   .contact_container{
     margin-bottom: 10px;
-  }
-  .textarea_wrap{
-    margin-top: 15px;
   }
 }

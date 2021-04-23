@@ -24,13 +24,14 @@
 
 
 .company_wrap{
-  /*padding-bottom: 20%;*/
+  /*margin-bottom: 6%;*/
 }
 .company_title{
   max-width: 100%;
   min-width: 320px;
-  margin-top: 60px;
-  margin-left: 73px;
+  margin-top: 4%;
+  margin-left: 6%;
+  padding-bottom: 2%;
 }
 .company_img{
   /*  max-width: 100%;
@@ -45,6 +46,7 @@
   line-height: 40px;
   letter-spacing: 0.03em;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 /*работает с картинкой
@@ -66,8 +68,8 @@
   margin-top: 2%;
 }
 #rectangle {
-  width: 480px;
-  height: 130px;
+  width: 700px;
+  height: 120px;
   background: rgba(214, 231, 238, 0.26);
 }
 
@@ -79,7 +81,7 @@
 
 .company_container{
   position: relative;
-  padding-bottom: 6%;
+  /*padding-bottom: 3%;*/
 }
 .company_text{
   color: #001B4A;
@@ -90,7 +92,7 @@
   font-weight: 500;
 }
 .text_wrap{
-  padding: 0 20%;
+  padding: 0 30% 0 20%;
   margin: 0;
   /*max-width: 80%;*/
 }
@@ -98,7 +100,7 @@
   position: absolute;
 }
 .part{
-  padding: 0 0 6%;
+ padding-bottom: 6%;
 }
 
 
@@ -151,6 +153,32 @@
   grid-column-gap: 80px;
   margin: 0;
 }*/
+
+@media (max-width: 1800px) {
+  .text_wrap{
+    padding: 0 20% 0 20%;
+  }
+  #rectangle {
+    width: 600px;
+    height: 110px;
+  }
+  .part{
+    padding-bottom: 8%;
+  }
+}
+@media (max-width: 1500px) {
+  #rectangle {
+    width: 500px;
+    height: 130px;
+  }
+  .text_wrap{
+    padding: 0 10% 0 20%;
+  }
+  .part{
+    padding-bottom: 10%;
+  }
+
+}
 @media (max-width: 1280px) {
   .text{
     font-size: 32px;
@@ -161,9 +189,16 @@
     font-size: 17px;
     line-height: 21px;
   }
-  .company_container{
-    padding-bottom: 8%;
+  #rectangle {
+    width: 500px;
+    height: 110px;
   }
+  .part{
+    padding-bottom: 12%;
+  }
+ /* .text_wrap{
+    padding: 0 15%;
+  }*/
 }
 @media (max-width: 980px) {
   img{
@@ -179,11 +214,8 @@
     line-height: 18px;
     letter-spacing: 0.01em;
   }
-  .company_container{
-    margin-bottom: 0;
-  }
   .part{
-    margin-bottom: 5%;
+    margin-bottom: 8%;
   }
  /* .text_wrap{
     padding-bottom: 20px;
@@ -191,12 +223,12 @@
 }
 @media (max-width: 768px) {
   .company_wrap{
-    padding-right: 30px;
+    padding-right: 3%;
   }
   .company_title{
-    margin-top: 30px;
+    margin-top: 3%;
     margin-left: 0;
-    padding-left: 30px;
+    padding-left: 3%;
   }
   .text{
     font-size: 29px;
@@ -214,6 +246,9 @@
     width: 300px;
     height: 90px;
     background: rgba(214, 231, 238, 0.26);
+  }
+  .part{
+    margin-bottom: 6%;
   }
  /* .text_wrap{
     padding-bottom: 20px;
@@ -234,7 +269,7 @@
     line-height: 13px;
   }
   .part{
-    margin-bottom: 10%;
+    margin-bottom: 16%;
   }
 /*  .about_company{
     grid-template-columns: 0.1fr 1fr;

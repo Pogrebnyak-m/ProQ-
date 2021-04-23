@@ -43,19 +43,20 @@ body{
 
 .container{
   max-width: 100%;
-  min-width: 320px;
+  min-width: 290px;
 }
 .wrap{
   max-width: 1500px;
   min-width: 290px;
+  padding: 6%;
   /*padding: 0 73px;*/
   /*padding: 0 8%;*/
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 @media (max-width: 768px) {
   .wrap{
-    padding: 0 30px;
+    padding: 0 3%;
   }
 }
 /*html, body { height: 100%; }
@@ -68,3 +69,8 @@ body { margin: 0; font-family: "Montserrat"; }*/
   @include app-root-typography($custom-typography);
 
 }*/
+
+
+
+
+
