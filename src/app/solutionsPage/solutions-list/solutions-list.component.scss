@@ -18,6 +18,53 @@
   font-weight: 600;
   padding-bottom: 2%;
 }
+/*вариант1*/
+.solutions_item{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.solutions_link{
+  text-decoration: none;
+  color: #001B4A;
+  transition-property: all;
+  transition-duration: 80ms;
+}
+.solutions_link:hover, .solutions_link:active, .solutions_link:focus{
+  color: rgba(2, 138, 190, 0.7);
+  text-decoration: underline;
+}
+
+/*вариант2*/
+.button_wrap{
+  align-items: center;
+}
+
+.sfd span {
+  display: inline-block;
+
+  font-size: 16px;
+  color: #001B4A;
+  font-weight: 500;
+}
+.arrow{
+  color: #001B4A;
+  padding-left: 1%;
+  transition: 0.5s ease;
+}
+
+.sfd:hover svg {
+  color: #028ABEB2;
+  transform: translateX(50%);
+  transition: 0.5s;
+}
+
+.sfd:hover span {
+  color: #028ABEB2;
+  transition: 0.3s;
+}
 
 
 

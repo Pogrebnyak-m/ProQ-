@@ -34,6 +34,11 @@ import { CompanyListComponent } from './companyPage/company-list/company-list.co
 import { ProjectsTitleComponent } from './projectsPage/projects-title/projects-title.component';
 import { ProjectsListComponent } from './projectsPage/projects-list/projects-list.component';
 import { MatRadioModule } from '@angular/material/radio';
+import { Solution1Component } from './solutionsPage/solution1/solution1.component';
+import { Solution2Component } from './solutionsPage/solution2/solution2.component';
+import { Solution3Component } from './solutionsPage/solution3/solution3.component';
+import { Solution1TitleComponent } from './solutionsPage/solution1/solution1-title/solution1-title.component';
+import { Solution1ContentComponent } from './solutionsPage/solution1/solution1-content/solution1-content.component';
 
 /*import { MatIconModule } from '@angular/material/icon';
 
@@ -46,7 +51,10 @@ const routes = [
   {path: 'solutions', component: SolutionsPageComponent},
   {path: 'company', component: CompanyPageComponent},
   {path: 'projects', component: ProjectsPageComponent},
-  {path: 'footer', component: FooterComponent}
+  {path: 'footer', component: FooterComponent},
+  {path: 'solution1', component: Solution1Component},
+  {path: 'solution2', component: Solution2Component},
+  {path: 'solution3', component: Solution3Component}
 ];
 
 @NgModule({
@@ -75,6 +83,11 @@ const routes = [
     CompanyListComponent,
     ProjectsTitleComponent,
     ProjectsListComponent,
+    Solution1Component,
+    Solution2Component,
+    Solution3Component,
+    Solution1TitleComponent,
+    Solution1ContentComponent,
   ],
   imports: [
     BrowserModule,
