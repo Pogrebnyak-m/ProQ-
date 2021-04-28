@@ -8,7 +8,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Проект
+                  Проект1
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFirstCol">
@@ -24,10 +24,26 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne-2">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-2" aria-expanded="false" aria-controls="collapseOne-2">
-                  Проект
+                  Проект2
                 </button>
               </h2>
               <div id="collapseOne-2" class="accordion-collapse collapse" aria-labelledby="headingOne-2" data-bs-parent="#accordionFirstCol">
+                <div class="accordion-body">
+                  <p><strong>Текст:</strong><br> -текст<br>-текст<br>-текст</p>
+                  <p><strong>Текст:</strong><br> -текст<br>-текст<br>-текст</p>
+                  <p><strong>Текст:</strong><br> -текст<br>-текст<br>-текст</p>
+                  <p><strong>Текст:</strong><br> -текст<br>-текст<br>-текст</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne-3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-3" aria-expanded="false" aria-controls="collapseOne-3">
+                  Проект3
+                </button>
+              </h2>
+              <div id="collapseOne-3" class="accordion-collapse collapse" aria-labelledby="headingOne-3" data-bs-parent="#accordionFirstCol">
                 <div class="accordion-body">
                   <p><strong>Текст:</strong><br> -текст<br>-текст<br>-текст</p>
                   <p><strong>Текст:</strong><br> -текст<br>-текст<br>-текст</p>
@@ -40,16 +56,35 @@
         </div>
         <div class="col-4">
 
-         <!-- <label id="example-radio-group-label">Текст</label>
-          <mat-radio-group
-            aria-labelledby="example-radio-group-label"
-            class="example-radio-group"
-            [(ngModel)]="projectsList">
-            <mat-radio-button class="example-radio-button" *ngFor="let point of point" [value]="point">
-              {{point}}
-            </mat-radio-button>
-          </mat-radio-group>
-          <div>{{projectsList}}</div>-->
+
+          <!--<section class="example-section">
+            <mat-checkbox class="example-margin">Текст</mat-checkbox>
+            <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>
+          </section>-->
+
+          <section class="example-section">
+  <span class="example-list-section">
+    <mat-checkbox class="example-margin"
+                  [checked]="allComplete"
+                  [color]="task.color"
+                  [indeterminate]="someComplete()"
+                  (change)="setAll($event.checked)">
+      {{task.name}}
+    </mat-checkbox>
+  </span>
+            <span class="example-list-section">
+    <ul>
+      <li *ngFor="let subtask of task.subtasks">
+        <mat-checkbox [(ngModel)]="subtask.completed"
+                      [color]="subtask.color"
+                      (ngModelChange)="updateAllComplete()">
+          {{subtask.name}}
+        </mat-checkbox>
+      </li>
+    </ul>
+  </span>
+          </section>
+
 
         </div>
       </div>

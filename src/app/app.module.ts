@@ -39,6 +39,7 @@ import { Solution2Component } from './solutionsPage/solution2/solution2.componen
 import { Solution3Component } from './solutionsPage/solution3/solution3.component';
 import { Solution1TitleComponent } from './solutionsPage/solution1/solution1-title/solution1-title.component';
 import { Solution1ContentComponent } from './solutionsPage/solution1/solution1-content/solution1-content.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 /*import { MatIconModule } from '@angular/material/icon';
 
@@ -99,7 +100,8 @@ const routes = [
     MatInputModule,
     MatButtonModule,
     MatTabsModule,
-    MatRadioModule,
+    MatCheckboxModule,
+    /*MatRadioModule,*/
     RouterModule.forRoot(routes)
     /*MatIconModule
     MatDividerModule,
@@ -109,7 +111,8 @@ const routes = [
     MatFormFieldModule,
     MatInputModule,
     MatTabsModule,
-    MatRadioModule,
+    MatCheckboxModule,
+    /*MatRadioModule,*/
     /*MatIconModule
     MatDividerModule,
     MatButtonModule*/
