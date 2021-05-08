@@ -33,7 +33,6 @@ import { CompanyTitleComponent } from './companyPage/company-title/company-title
 import { CompanyListComponent } from './companyPage/company-list/company-list.component';
 import { ProjectsTitleComponent } from './projectsPage/projects-title/projects-title.component';
 import { ProjectsListComponent } from './projectsPage/projects-list/projects-list.component';
-import { MatRadioModule } from '@angular/material/radio';
 import { Solution1Component } from './solutionsPage/solution1/solution1.component';
 import { Solution2Component } from './solutionsPage/solution2/solution2.component';
 import { Solution3Component } from './solutionsPage/solution3/solution3.component';
