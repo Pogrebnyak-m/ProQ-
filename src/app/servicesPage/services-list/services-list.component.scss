@@ -2,13 +2,14 @@
   max-width: 100%;
   min-width: 290px;
 }
-.colored_row{
-  padding: 3% 6%;
-  background-color: rgba(214, 231, 238, 0.26);
-}
+
 .white_row{
   padding: 3% 6%;
 }
+.k-alt:nth-child(odd) {
+  background: rgba(214, 231, 238, 0.26);
+}
+
 .service_title{
   padding-bottom: 1%;
 }
