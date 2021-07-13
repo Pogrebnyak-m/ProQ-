@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-/*import { items } from './items';*/
+import { careers } from './careers';
 
 @Component({
   selector: 'app-company-list',
@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./company-list.component.scss']
 })
 export class CompanyListComponent implements OnInit {
-  /*items = items;*/
-
+  careers = careers;
   constructor() { }
 
   ngOnInit(): void {

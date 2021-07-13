@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { technologies } from './technologies';
 
 @Component({
   selector: 'app-technologies',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./technologies.component.scss']
 })
 export class TechnologiesComponent implements OnInit {
+  technologies = technologies;
 
   constructor() { }
 

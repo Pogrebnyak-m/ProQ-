@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { items } from './items';
 
 @Component({
   selector: 'app-content',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-
+  items = items;
   constructor() { }
 
   ngOnInit(): void {
