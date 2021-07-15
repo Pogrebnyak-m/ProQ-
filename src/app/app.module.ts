@@ -42,8 +42,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import { Solution1ListComponent } from './solutionsPage/solution1/solution1-list/solution1-list.component';
 import { Solution1ParagraphComponent } from './solutionsPage/solution1/solution1-paragraph/solution1-paragraph.component';
-import { RadiosComponent } from './projectsPage/radios/radios.component';
-import { Accordions1Component } from './projectsPage/accordions1/accordions1.component';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { Project1Component } from './projectsPage/project1/project1.component';
@@ -103,8 +101,6 @@ const routes = [
     Solution1ContentComponent,
     Solution1ListComponent,
     Solution1ParagraphComponent,
-    RadiosComponent,
-    Accordions1Component,
     Project1Component,
     Project1TitleComponent,
     Project1ListComponent,
