@@ -1,8 +1,8 @@
 .company_title{
   max-width: 100%;
-  min-width: 320px;
+  min-width: 280px;
   margin-top: 4%;
-  margin-left: 6%;
+  padding-left: 6%;
   padding-bottom: 2%;
 }
 .about_company{
@@ -127,24 +127,23 @@
     margin-bottom: 8%;
   }
   #rectangle {
-    width: 300px;
+    width: 400px;
     height: 120px;
   }
   .rectangle_wrap{
     margin-top: 4%;
+  }
+  .text_wrap{
+    padding: 0 6%;
   }
  /* .text_wrap{
     padding-bottom: 20px;
   }*/
 }
 @media (max-width: 768px) {
-  .company_wrap{
-    padding-right: 3%;
-  }
   .company_title{
     margin-top: 3%;
     margin-left: 0;
-    padding-left: 3%;
   }
   .text{
     font-size: 29px;
@@ -152,19 +151,24 @@
     letter-spacing: 0.02em;
   }
   .text_wrap {
-    padding: 0 10%;
+    padding: 0 6%;
   }
   .company_text{
     font-size: 13px;
     line-height: 16px;
   }
   #rectangle {
-    width: 300px;
-    height: 90px;
-    background: rgba(214, 231, 238, 0.26);
+    display: none;
   }
   .part{
-    margin-bottom: 6%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .company_container{
+    position: static;
+  }
+  .about_company{
+    position: static;
   }
  /* .text_wrap{
     padding-bottom: 20px;
@@ -176,16 +180,13 @@
 }
 @media (max-width: 580px) {
   .text{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 28px;
     letter-spacing: 0;
   }
   .company_text{
     font-size: 10px;
     line-height: 13px;
-  }
-  .part{
-    margin-bottom: 16%;
   }
 /*  .about_company{
     grid-template-columns: 0.1fr 1fr;

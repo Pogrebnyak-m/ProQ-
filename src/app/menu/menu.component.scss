@@ -1,11 +1,71 @@
-.menu_list{
+.header_line{
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+.header_top_wrap{
+  max-width: 100%;
+  min-width: 280px;
+  padding: 0 6%;
+  margin: 0;
+}
+.custom-toggler.navbar-toggler {
+  color: #fff;
+  border: none;
+}
+/*.navbar-light.navbar-toggler-icon{
+  color: #001B4A !important;
+}*/
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 27, 74, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/*.menu_list {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 0;
+}*/
+.nav-item{
+  color: #001B4A !important;
+  font-weight: 400;
+  font-size: 16px;
 }
-.header_line{
+
+.navbar-toggler{
+  padding-left: 0;
+}
+
+.navbar-brand{
+  margin-right: 0;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: #001B4A !important;
+  transition-property: all;
+  transition-duration: 80ms;
+}
+.nav-link:hover, .nav-link:active, .nav-link:focus{
+  color: #028ABE !important;
+  text-decoration: underline;
+}
+
+@media (max-width: 580px) {
+  .logo_img{
+    max-width: 170px;
+  }
+  .nav-item{
+    font-size: 13px;
+  }
+}
+
+/*.menu_list{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0;
+}*/
+/*.header_line{
   padding-bottom: 0;
 }
 .menu_item{
@@ -47,9 +107,9 @@
   }
 }
 @media (max-width: 580px) {
- /* .menu_list{
+ !* .menu_list{
     justify-content: center;
-  }*/
+  }*!
 .menu_list{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -80,7 +140,7 @@
 .header_top{
   display: grid;
   grid-template-columns: auto 1fr;
-  /*grid-template-columns: 242px 1fr;*/
+  !*grid-template-columns: 242px 1fr;*!
   grid-column-gap: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -114,10 +174,10 @@
   }
 }
 @media (max-width: 580px) {
- /* .header_top{
+ !* .header_top{
     grid-template-columns: auto;
     justify-items: center;
-  }*/
+  }*!
   .header_title{
     font-size: 35px;
     line-height: 40px;
@@ -129,7 +189,10 @@
   .header_top_wrap{
     padding: 0 30px;
   }
-  /*.wrap_img {
+  !*.wrap_img {
     background: none;
-  }*/
-}
+  }*!
+}*/
+
+
+

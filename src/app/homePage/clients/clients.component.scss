@@ -3,7 +3,7 @@
   min-width: 290px;
   /*padding: 4% 6% 4%;*/
   padding: 0 6%;
-  margin: 4% auto;
+  margin: 7% auto 4%;
 }
 .customers_title{
   max-width: 100%;
@@ -49,7 +49,8 @@
 
 @media (max-width: 768px) {
   .holder_wrap{
-    padding: 3%;
+    padding: 3% 6% 5%;
+    margin: 0;
   }
   .text{
     font-size: 29px;
@@ -63,7 +64,7 @@
 }
 @media (max-width: 580px) {
   .text{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 28px;
     letter-spacing: 0;
     font-weight: 400;
