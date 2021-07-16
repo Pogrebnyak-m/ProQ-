@@ -3,12 +3,14 @@
 
     <div class="col-12 white_row k-alt" *ngFor="let service of services">
       <div class="service_title">
+
         <h2 class="text" *ngIf="service.name">{{service.name}}</h2>
       </div>
       <div class="textabout_wrap">
         <h3 class="text_about" *ngIf="service.description">{{service.description}}</h3>
       </div>
     </div>
+
 
 
 
