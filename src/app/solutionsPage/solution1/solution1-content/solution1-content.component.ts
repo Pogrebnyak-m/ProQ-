@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { objects } from './objects';
 
 @Component({
   selector: 'app-solution1-content',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./solution1-content.component.scss']
 })
 export class Solution1ContentComponent implements OnInit {
+  objects = objects;
 
   constructor() { }
 

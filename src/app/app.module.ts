@@ -39,6 +39,16 @@ import { Solution3Component } from './solutionsPage/solution3/solution3.componen
 import { Solution1TitleComponent } from './solutionsPage/solution1/solution1-title/solution1-title.component';
 import { Solution1ContentComponent } from './solutionsPage/solution1/solution1-content/solution1-content.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
+import { Solution1ListComponent } from './solutionsPage/solution1/solution1-list/solution1-list.component';
+import { Solution1ParagraphComponent } from './solutionsPage/solution1/solution1-paragraph/solution1-paragraph.component';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { Project1Component } from './projectsPage/project1/project1.component';
+import { Project1TitleComponent } from './projectsPage/project1/project1-title/project1-title.component';
+import { Project1ListComponent } from './projectsPage/project1/project1-list/project1-list.component';
+import { Project1NoteComponent } from './projectsPage/project1/project1-note/project1-note.component';
+import { Project1ParagraphComponent } from './projectsPage/project1/project1-paragraph/project1-paragraph.component';
 
 /*import { MatIconModule } from '@angular/material/icon';
 
@@ -54,7 +64,8 @@ const routes = [
   {path: 'footer', component: FooterComponent},
   {path: 'solution1', component: Solution1Component},
   {path: 'solution2', component: Solution2Component},
-  {path: 'solution3', component: Solution3Component}
+  {path: 'solution3', component: Solution3Component},
+  {path: 'project1', component: Project1Component}
 ];
 
 @NgModule({
@@ -88,6 +99,13 @@ const routes = [
     Solution3Component,
     Solution1TitleComponent,
     Solution1ContentComponent,
+    Solution1ListComponent,
+    Solution1ParagraphComponent,
+    Project1Component,
+    Project1TitleComponent,
+    Project1ListComponent,
+    Project1NoteComponent,
+    Project1ParagraphComponent,
   ],
   imports: [
     BrowserModule,
@@ -100,7 +118,9 @@ const routes = [
     MatButtonModule,
     MatTabsModule,
     MatCheckboxModule,
-    /*MatRadioModule,*/
+    MatRadioModule,
+    MatOptionModule,
+    MatSelectModule,
     RouterModule.forRoot(routes)
     /*MatIconModule
     MatDividerModule,
@@ -111,7 +131,7 @@ const routes = [
     MatInputModule,
     MatTabsModule,
     MatCheckboxModule,
-    /*MatRadioModule,*/
+    MatRadioModule,
     /*MatIconModule
     MatDividerModule,
     MatButtonModule*/

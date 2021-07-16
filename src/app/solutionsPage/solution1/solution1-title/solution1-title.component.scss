@@ -1,31 +1,22 @@
-.solutions_title{
-  max-width: 100%;
-  min-width: 290px;
-}
-.solutions_wrap{
-  max-width: 100%;
-  min-width: 290px;
+.solution_wrap{
   padding: 0 6%;
+  margin-bottom: 3%;
 }
-.solutions{
-  padding: 5% 0 0;
-  max-width: 100%;
-  min-width: 320px;
+.solution{
+  padding: 3% 0 0;
 }
 .text{
-  margin-bottom: 15px;
+  margin-bottom: 1%;
   font-size: 38px;
   line-height: 40px;
   letter-spacing: 0.03em;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .textabout{
-  max-width: 100%;
-  min-width: 320px;
-  padding: 2% 5% 4% 0;
+  padding: 2% 0 0;
 }
-.solutions_text{
+.solution_text{
   color: #001B4A;
   font-size: 20px;
   line-height: 24px;
@@ -34,36 +25,19 @@
   font-weight: 500;
   margin: 0;
 }
-
-.cell_1{
-  background: #F4F9FB;
-  padding: 4% 6%;
-  border-radius: 7px;
-  margin: 7% 1% 1%;
-}
-.cell_2{
-  background: #F4F9FB;
-  padding: 4% 6%;
-  border-radius: 7px;
-  margin: 1% 1% 7%;
-}
-.color_grid{
-  margin: auto 0;
-}
-
 @media (max-width: 1280px) {
   .text{
     font-size: 32px;
     line-height: 36px;
     letter-spacing: 0.03em;
   }
-  .solutions_text{
+  .solution_text{
     font-size: 17px;
     line-height: 21px;
   }
 }
 @media (max-width: 980px) {
-  .solutions_text{
+  .solution_text{
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.01em;
@@ -75,18 +49,18 @@
     line-height: 31px;
     letter-spacing: 0.02em;
   }
-  .solutions_text{
+  .solution_text{
     font-size: 13px;
     line-height: 16px;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 576px) {
   .text{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 28px;
     letter-spacing: 0;
   }
-  .solutions_text{
+  .solution_text{
     font-size: 10px;
     line-height: 13px;
   }
