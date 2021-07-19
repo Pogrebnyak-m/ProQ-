@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { points } from './points';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project1-list',
@@ -7,9 +6,13 @@ import { points } from './points';
   styleUrls: ['./project1-list.component.scss']
 })
 export class Project1ListComponent implements OnInit {
-  points = points;
+  @Input() data = {title: '', points: [{
+      id: 1,
+      name: 'Заголовок',
+      mark: '01',
+      description: 'Повседневная практика показывает, что выбранный нами инновационный путь...',
+    }]};
 
-  constructor() { }
 
   ngOnInit(): void {
   }

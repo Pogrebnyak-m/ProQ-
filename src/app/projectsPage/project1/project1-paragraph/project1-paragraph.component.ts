@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project1-paragraph',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project1-paragraph.component.scss']
 })
 export class Project1ParagraphComponent implements OnInit {
-
+  @Input() paragraph = {name: '', text: ''};
   constructor() { }
 
   ngOnInit(): void {

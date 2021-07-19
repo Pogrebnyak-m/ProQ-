@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { comments } from './comments';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-project1-note',
@@ -7,7 +7,11 @@ import { comments } from './comments';
   styleUrls: ['./project1-note.component.scss']
 })
 export class Project1NoteComponent implements OnInit {
-  comments = comments;
+  @Input() comments = [{
+    id: 1,
+    name: 'Заказчик:',
+    description: 'Текст',
+  }];
 
   constructor() { }
 
