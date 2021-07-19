@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import {ProjectServiceService} from "../project-service.service";
+import {ProjectDataService} from "../project-data.service";
 import {ActivatedRoute} from "@angular/router";
 
 
 @Component({
-  selector: 'app-project1',
-  templateUrl: './project1.component.html',
-  styleUrls: ['./project1.component.scss']
+  selector: 'app-project-details',
+  templateUrl: './project-details.component.html',
+  styleUrls: ['./project-details.component.scss']
 })
-export class Project1Component implements OnInit {
+export class ProjectDetailsComponent implements OnInit {
 
-  constructor(public ps: ProjectServiceService, private route: ActivatedRoute,) { }
+  constructor(public ps: ProjectDataService, private route: ActivatedRoute,) { }
   public row = {
     id: 1,
     name: 'Ошибка 404',
@@ -75,7 +75,7 @@ export class Project1Component implements OnInit {
     },
   };
   ngOnInit(): void {
-    var tmp = this.route.snapshot.paramMap.get('identidicator');
+    var tmp = this.route.snapshot.paramMap.get('name');
     var rowArray = this.ps.Projects.filter(proj => proj.name === tmp);
     if (rowArray.length > 0 ){
       this.row = rowArray[0];

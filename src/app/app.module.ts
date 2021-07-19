@@ -44,11 +44,11 @@ import { Solution1ListComponent } from './solutionsPage/solution1/solution1-list
 import { Solution1ParagraphComponent } from './solutionsPage/solution1/solution1-paragraph/solution1-paragraph.component';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
-import { Project1Component } from './projectsPage/project1/project1.component';
-import { Project1TitleComponent } from './projectsPage/project1/project1-title/project1-title.component';
-import { Project1ListComponent } from './projectsPage/project1/project1-list/project1-list.component';
-import { Project1NoteComponent } from './projectsPage/project1/project1-note/project1-note.component';
-import { Project1ParagraphComponent } from './projectsPage/project1/project1-paragraph/project1-paragraph.component';
+import { ProjectDetailsComponent } from './projectsPage/project-details/project-details.component';
+import { ProjectDetailsTitleComponent } from './projectsPage/project-details/project-details-title/project-details-title.component';
+import { ProjectDetailsListComponent } from './projectsPage/project-details/project-details-list/project-details-list.component';
+import { ProjectDetailsNoteComponent } from './projectsPage/project-details/project-details-note/project-details-note.component';
+import { ProjectDetailsParagraphComponent } from './projectsPage/project-details/project-details-paragraph/project-details-paragraph.component';
 
 /*import { MatIconModule } from '@angular/material/icon';
 
@@ -65,7 +65,7 @@ const routes = [
   {path: 'solution1', component: Solution1Component},
   {path: 'solution2', component: Solution2Component},
   {path: 'solution3', component: Solution3Component},
-  {path: 'project1', component: Project1Component}
+  {path: 'project', component: ProjectDetailsComponent}
 ];
 
 @NgModule({
@@ -101,11 +101,11 @@ const routes = [
     Solution1ContentComponent,
     Solution1ListComponent,
     Solution1ParagraphComponent,
-    Project1Component,
-    Project1TitleComponent,
-    Project1ListComponent,
-    Project1NoteComponent,
-    Project1ParagraphComponent,
+    ProjectDetailsComponent,
+    ProjectDetailsTitleComponent,
+    ProjectDetailsListComponent,
+    ProjectDetailsNoteComponent,
+    ProjectDetailsParagraphComponent,
   ],
   imports: [
     BrowserModule,

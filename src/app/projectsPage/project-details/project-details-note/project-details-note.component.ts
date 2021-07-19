@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
-  selector: 'app-project1-note',
-  templateUrl: './project1-note.component.html',
-  styleUrls: ['./project1-note.component.scss']
+  selector: 'app-project-details-note',
+  templateUrl: './project-details-note.component.html',
+  styleUrls: ['./project-details-note.component.scss']
 })
-export class Project1NoteComponent implements OnInit {
+export class ProjectDetailsNoteComponent implements OnInit {
   @Input() comments = [{
     id: 1,
     name: 'Заказчик:',

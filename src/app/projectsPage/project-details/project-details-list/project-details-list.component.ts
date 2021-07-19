@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-project1-list',
-  templateUrl: './project1-list.component.html',
-  styleUrls: ['./project1-list.component.scss']
+  selector: 'app-project-details-list',
+  templateUrl: './project-details-list.component.html',
+  styleUrls: ['./project-details-list.component.scss']
 })
-export class Project1ListComponent implements OnInit {
+export class ProjectDetailsListComponent implements OnInit {
   @Input() data = {title: '', points: [{
       id: 1,
       name: 'Заголовок',
