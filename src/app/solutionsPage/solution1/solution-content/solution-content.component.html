@@ -2,7 +2,7 @@
   <div class="solutions_wrap">
 
       <div class="text_wrap">
-        <h2 class="text">Подзаголовок1</h2>
+        <h2 class="text">{{data?.title}}</h2>
       </div>
       <div class="container-fluid">
         <div class="row">
@@ -12,7 +12,7 @@
 
           <div class="col-12 col-sm-6 gx-sm-5 gx-4 solutions_text_wrap">
 
-          <div class="list_wrap" *ngFor="let object of objects">
+          <div class="list_wrap" *ngFor="let object of data?.objects">
             <div class="row list_item">
               <div class="col-1 col-sm-2 number">
                 <h2 class="bold_text" *ngIf="object.mark">{{object.mark}}</h2>
