@@ -146,7 +146,7 @@ export class ProjectDataService {
       name: 'Заголовок',
       description: 'Повседневная практика показывает, что выбранный нами инновационный путь...',
       descriptionFull: 'Повседневная практика показывает, что выбранный нами инновационный путь...',
-      img: '../../../assets/img/image%2015.svg',
+      img: '../../../assets/img/AnalitikZapros.png',
       comments: [
         {
           id: 1,
