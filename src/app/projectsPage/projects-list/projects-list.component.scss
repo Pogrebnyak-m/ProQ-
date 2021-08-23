@@ -18,6 +18,10 @@
   letter-spacing: 0.02em;
   font-weight: 600;
   margin-bottom: 3%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .card-text{
   color: #001B4A;
@@ -27,6 +31,10 @@
   font-weight: 400;
   margin-bottom: 2%;
   padding-right: 5%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .button_wrap{

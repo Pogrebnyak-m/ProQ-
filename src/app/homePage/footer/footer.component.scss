@@ -15,6 +15,9 @@
 .button_text{
   color: #001B4A;
 }
+.mat-stroked-button:not(.mat-button-disabled){
+  border-color: #001B4A;
+}
 .contact_form{
   margin-bottom: 4%;
   font-size: 17px;
@@ -142,12 +145,6 @@ mat-form-field.mat-form-field {
     line-height: 28px;
     letter-spacing: 0;
     margin-bottom: 0;
-  }
-  .button_text{
-    font-size: 10px;
-  }
-  mat-label{
-    font-size: 10px;
   }
   .contact_info{
     padding: 4% 1% 2%;

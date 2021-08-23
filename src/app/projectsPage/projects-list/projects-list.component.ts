@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { cards } from './cards';
+import { ProjectDataService} from "../project-data.service";
 
 @Component({
   selector: 'app-projects-list',
@@ -7,7 +7,9 @@ import { cards } from './cards';
   styleUrls: ['projects-list.component.scss'],
 })
 export class ProjectsListComponent {
+  constructor(public ps: ProjectDataService) {
+  }
   selected = 'option2';
-  cards = cards;
+  cards = this.ps.Projects;
 }
 

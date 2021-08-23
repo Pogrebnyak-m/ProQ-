@@ -34,21 +34,19 @@ import { CompanyListComponent } from './companyPage/company-list/company-list.co
 import { ProjectsTitleComponent } from './projectsPage/projects-title/projects-title.component';
 import { ProjectsListComponent } from './projectsPage/projects-list/projects-list.component';
 import { Solution1Component } from './solutionsPage/solution1/solution1.component';
-import { Solution2Component } from './solutionsPage/solution2/solution2.component';
-import { Solution3Component } from './solutionsPage/solution3/solution3.component';
-import { Solution1TitleComponent } from './solutionsPage/solution1/solution1-title/solution1-title.component';
-import { Solution1ContentComponent } from './solutionsPage/solution1/solution1-content/solution1-content.component';
+import { SolutionTitleComponent } from './solutionsPage/solution1/solution-title/solution-title.component';
+import { SolutionContentComponent } from './solutionsPage/solution1/solution-content/solution-content.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
-import { Solution1ListComponent } from './solutionsPage/solution1/solution1-list/solution1-list.component';
-import { Solution1ParagraphComponent } from './solutionsPage/solution1/solution1-paragraph/solution1-paragraph.component';
+import { SolutionListComponent } from './solutionsPage/solution1/solution1-list/solution-list.component';
+import { SolutionParagraphComponent } from './solutionsPage/solution1/solution-paragraph/solution-paragraph.component';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
-import { Project1Component } from './projectsPage/project1/project1.component';
-import { Project1TitleComponent } from './projectsPage/project1/project1-title/project1-title.component';
-import { Project1ListComponent } from './projectsPage/project1/project1-list/project1-list.component';
-import { Project1NoteComponent } from './projectsPage/project1/project1-note/project1-note.component';
-import { Project1ParagraphComponent } from './projectsPage/project1/project1-paragraph/project1-paragraph.component';
+import { ProjectDetailsComponent } from './projectsPage/project-details/project-details.component';
+import { ProjectDetailsTitleComponent } from './projectsPage/project-details/project-details-title/project-details-title.component';
+import { ProjectDetailsListComponent } from './projectsPage/project-details/project-details-list/project-details-list.component';
+import { ProjectDetailsNoteComponent } from './projectsPage/project-details/project-details-note/project-details-note.component';
+import { ProjectDetailsParagraphComponent } from './projectsPage/project-details/project-details-paragraph/project-details-paragraph.component';
 
 /*import { MatIconModule } from '@angular/material/icon';
 
@@ -63,9 +61,7 @@ const routes = [
   {path: 'projects', component: ProjectsPageComponent},
   {path: 'footer', component: FooterComponent},
   {path: 'solution1', component: Solution1Component},
-  {path: 'solution2', component: Solution2Component},
-  {path: 'solution3', component: Solution3Component},
-  {path: 'project1', component: Project1Component}
+  {path: 'project', component: ProjectDetailsComponent}
 ];
 
 @NgModule({
@@ -95,17 +91,15 @@ const routes = [
     ProjectsTitleComponent,
     ProjectsListComponent,
     Solution1Component,
-    Solution2Component,
-    Solution3Component,
-    Solution1TitleComponent,
-    Solution1ContentComponent,
-    Solution1ListComponent,
-    Solution1ParagraphComponent,
-    Project1Component,
-    Project1TitleComponent,
-    Project1ListComponent,
-    Project1NoteComponent,
-    Project1ParagraphComponent,
+    SolutionTitleComponent,
+    SolutionContentComponent,
+    SolutionListComponent,
+    SolutionParagraphComponent,
+    ProjectDetailsComponent,
+    ProjectDetailsTitleComponent,
+    ProjectDetailsListComponent,
+    ProjectDetailsNoteComponent,
+    ProjectDetailsParagraphComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,25 +3,7 @@
 
     <div class="container-fluid">
       <div class="row">
-
-        <div class="col-12 col-sm-3">
-          <!--<mat-form-field appearance="standard">
-            <mat-label>Select an option</mat-label>
-            <mat-select [(value)]="selected">
-              <mat-option>None</mat-option>
-              <mat-option value="option1">Option 1</mat-option>
-              <mat-option value="option2">Option 2</mat-option>
-              <mat-option value="option3">Option 3</mat-option>
-            </mat-select>
-          </mat-form-field>-->
-
-          <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1" class="col-12">Option 1</mat-radio-button>
-            <mat-radio-button value="2" class="col-12">Option 2</mat-radio-button>
-          </mat-radio-group>
-        </div>
-
-        <div class="col-12 col-sm-9">
+        <div class="col-12">
           <div class="row">
             <div class="col-12 col-sm-6 card_wrap" *ngFor="let card of cards">
               <div class="card">
@@ -31,7 +13,7 @@
                   <p class="card-text" *ngIf="card.description">{{card.description}}</p>
 
                   <div class="sfd">
-                    <a routerLink="/project1" class="button_wrap">
+                    <a [routerLink]="['/project', {name: card.name} ]" class="button_wrap">
                       <span class="card-text">Подробнее</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
