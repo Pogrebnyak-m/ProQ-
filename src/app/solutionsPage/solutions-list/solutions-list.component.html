@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-12 col-sm-6 border-bottom border-secondary part" *ngFor="let solution of solutions">
           <div class="solutions_title">
-
+            <img *ngIf="solution.img" src="{{solution.img}}" class="card-img-top" alt="...">
             <h2 class="text" *ngIf="solution.name">{{solution.name}}</h2>
           </div>
           <div>

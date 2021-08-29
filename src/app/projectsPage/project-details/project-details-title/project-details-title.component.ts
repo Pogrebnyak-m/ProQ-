@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./project-details-title.component.scss']
 })
 export class ProjectDetailsTitleComponent implements OnInit {
-  @Input() data = {name: '', descriptionFull: ''};
+  @Input() data = {name: '', descriptionFull: '', description: '',};
   constructor() { }
 
   ngOnInit(): void {
