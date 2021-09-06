@@ -13,35 +13,43 @@
       </div>
 
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
+<!--        <div class="carousel-item active" data-bs-interval="5000">-->
+<!--          <div class="row gx-1 gx-sm-5 slider_wrap">-->
+<!--            <img src="../../../assets/img/proqProekt.png" class="col-12 col-sm-6 d-block slider_img" alt="...">-->
+<!--            <div class="col-12 col-sm-6 text_wrap">-->
+<!--              <p class="project_name">Информационно-аналитическая платформа ProQ</p>-->
+<!--              <p class="about_project">ETL – система, совместимая с медицинской информационной системой qMS,-->
+<!--                предназначена для консолидации, последующей обработки и-->
+<!--                визуализации данных из медицинских информационных систем, баз данных и других источников.</p>-->
+
+<!--              <div class="button_group">-->
+<!--                <button mat-raised-button color="primary" class="button_text">Текст</button>-->
+<!--                <button mat-stroked-button color="primary" class="button_text button_text_color ml-3">Текст</button>-->
+<!--              </div>-->
+
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+        <div
+             [class.active] = "project.id == 1 ? true: false"
+             class="carousel-item" data-bs-interval="5000"
+
+
+             *ngFor="let project of projects">
           <div class="row gx-1 gx-sm-5 slider_wrap">
-            <img src="../../../assets/img/proqProekt.png" class="col-12 col-sm-6 d-block slider_img" alt="...">
-            <div class="col-12 col-sm-6 text_wrap">
-              <p class="project_name">Информационно-аналитическая платформа ProQ</p>
-              <p class="about_project">ETL – система, совместимая с медицинской информационной системой qMS,
-                предназначена для консолидации, последующей обработки и
-                визуализации данных из медицинских информационных систем, баз данных и других источников.</p>
-
-              <div class="button_group">
-                <button mat-raised-button color="primary" class="button_text">Текст</button>
-                <button mat-stroked-button color="primary" class="button_text button_text_color ml-3">Текст</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item" data-bs-interval="5000"  *ngFor="let project of projects">
-          <div class="row gx-1 gx-sm-5 slider_wrap">
-            <img src="{{project.img}}" class="col-12 col-sm-6 d-block slider_img" alt="...">
+            <img src="{{project.imgPage}}" class="col-12 col-sm-6 d-block slider_img" alt="...">
             <div class="col-12 col-sm-6 text_wrap">
               <p class="project_name" *ngIf="project.name">{{project.name}}</p>
               <p class="about_project" *ngIf="project.description">{{project.description}}</p>
 
               <div class="button_group">
                 <button mat-raised-button color="primary" class="button_text">Подробнее</button>
-                <button mat-stroked-button color="primary" class="button_text button_text_color ml-3">Демо</button>
+               <a href="{{project?.demo}}">
+                <button mat-stroked-button color="primary"  class="button_text button_text_color ml-3" [disabled]="!project.demo" >Демо</button>
+               </a>
               </div>
+
 
             </div>
           </div>
@@ -65,7 +73,7 @@
 
 
 
-<!--<section class="projects">
+<!--<section class="solutions">
   <div class="project_wrap">
       <div class="projects_title">
        <h2 class="text">Решения</h2>

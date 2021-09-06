@@ -1,24 +1,26 @@
 <main class="solutions_title">
   <div class="solutions_wrap">
 
-      <div class="text_wrap">
-        <h2 class="text">{{data?.title}}</h2>
-      </div>
+<!--      <div class="text_wrap">-->
+<!--        <h2 class="text">{{data?.title}}</h2>-->
+<!--      </div>-->
+    <h2 class="text"> {{data?.commentsName}}</h2>
       <div class="container-fluid">
+
         <div class="row">
           <div class="col-12 col-sm-6 gx-sm-5 gx-4 img_wrap">
-            <img class="img2" src="../assets/img/Group%20512.png">
+            <img class="img2" src="{{data?.imgMain}}">
           </div>
 
           <div class="col-12 col-sm-6 gx-sm-5 gx-4 solutions_text_wrap">
 
-          <div class="list_wrap" *ngFor="let object of data?.objects">
+          <div class="list_wrap" *ngFor="let comment of data?.comments">
             <div class="row list_item">
-              <div class="col-1 col-sm-2 number">
-                <h2 class="bold_text" *ngIf="object.mark">{{object.mark}}</h2>
-              </div>
+<!--              <div class="col-1 col-sm-2 number">-->
+<!--                <h2 class="bold_text" *ngIf="comment?.mark">{{comment?.mark}}</h2>-->
+<!--              </div>-->
               <div class="col-11 col-sm-10">
-                <h3 class="solutions_text" *ngIf="object.description">{{object.description}}</h3>
+                <h3 class="solutions_text" >{{comment?.description}}</h3>
               </div>
             </div>
           </div>
@@ -27,6 +29,33 @@
           </div>
 
       </div>
+
+    <h2 class="text"> {{data?.commentsName2}}</h2>
+    <div class="container-fluid">
+
+      <div class="row">
+
+
+        <div class="col-12 col-sm-6 gx-sm-5 gx-4 solutions_text_wrap">
+
+          <div class="list_wrap"  *ngFor="let comment of data?.comments2 ">
+            <div class="row list_item">
+              <!--              <div class="col-1 col-sm-2 number">-->
+              <!--                <h2 class="bold_text" *ngIf="comment?.mark">{{comment?.mark}}</h2>-->
+              <!--              </div>-->
+              <div class="col-11 col-sm-10">
+                <h3 class="solutions_text" > {{comment?.description}}</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 gx-sm-5 gx-4 img_wrap">
+          <img class="img2" src="{{data?.imgDetali}}">
+        </div>
+      </div>
+
+    </div>
 
     </div>
 </main>

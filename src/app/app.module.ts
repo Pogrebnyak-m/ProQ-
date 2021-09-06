@@ -10,7 +10,7 @@ import { ContentComponent } from './homePage/content/content.component';
 import { HolderComponent } from './homePage/holder/holder.component';
 import { CompanyComponent } from './homePage/company/company.component';
 import { ClientsPartnersComponent } from './homePage/clients/clients-partners.component';
-import { ProjectsComponent } from './homePage/projects/projects.component';
+import { SolutionsComponent } from './homePage/solutions/solutions.component';
 import { FooterComponent } from './homePage/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -74,7 +74,7 @@ const routes = [
     HolderComponent,
     CompanyComponent,
     ClientsPartnersComponent,
-    ProjectsComponent,
+    SolutionsComponent,
     FooterComponent,
     ServicesPageComponent,
     HomePageComponent,

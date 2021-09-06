@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { solutions } from './solutions';
+import { solutions } from '../../homePage/solutions/solutions';
 
 @Component({
   selector: 'app-solutions-list',
