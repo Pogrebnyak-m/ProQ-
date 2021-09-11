@@ -1,71 +1,20 @@
 <main class="solutions_title">
   <div class="solutions_wrap">
 
-<!--    <div class="text_wrap">-->
-<!--      <h2 class="text">Подзаголовок2</h2>-->
-<!--    </div>-->
-<!--    <div class="container-fluid">-->
-<!--      <div class="row">-->
-
-<!--        <div class="col-12 col-sm-6">-->
-<!--          <div class="img_wrap">-->
-<!--            <img class="img_1" src="./assets/img/file%201.svg">-->
-<!--          </div>-->
-<!--          <div class="text_about">-->
-<!--            <h3 class="solutions_text"><strong>Текст</strong></h3>-->
-<!--          </div>-->
-<!--            <div class="text_about">-->
-<!--                <h3 class="solutions_text">Повседневная практика показывает, что выбранный нами инновационный путь способствует повышению качества как самодостаточных, так и внешне зависимых концептуальных решений.</h3>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col-12 col-sm-6">-->
-<!--        </div>-->
-
-<!--        <div class="col-12 col-sm-6">-->
-<!--        </div>-->
-
-<!--        <div class="col-12 col-sm-6 second_col" >-->
-<!--          <div class="img_wrap">-->
-<!--            <img class="img_1" src="./assets/img/file%201.svg">-->
-<!--          </div>-->
-<!--          <div class="text_about">-->
-<!--            <h3 class="solutions_text"><strong>Текст</strong></h3>-->
-<!--          </div>-->
-<!--          <div class="text_about">-->
-<!--            <h3 class="solutions_text">Повседневная практика показывает, что выбранный нами инновационный путь способствует повышению качества как самодостаточных, так и внешне зависимых концептуальных решений.</h3>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        <div class="col-12 col-sm-6">-->
-<!--          <div class="img_wrap">-->
-<!--            <img class="img_1" src="./assets/img/file%201.svg">-->
-<!--          </div>-->
-<!--          <div class="text_about">-->
-<!--            <h3 class="solutions_text"><strong>{{data?.name}}Текст</strong></h3>-->
-<!--          </div>-->
-<!--          <div class="text_about">-->
-<!--            <h3 class="solutions_text">Повседневная практика показывает, что выбранный нами инновационный путь способствует повышению качества как самодостаточных, так и внешне зависимых концептуальных решений.</h3>-->
-<!--          </div>-->
-<!--        </div>-->
-
-
-<!--      </div>-->
-<!--    </div>-->
-
-<!--  </div>-->
-<!--</main>-->
+    <div class="text_wrap">
+      <h2 class="text">Решаемые проблемы</h2>
+    </div>
 
 
 
 <div class="container-fluid">
   <div class="row">
 
-    <div class="img_wrap">
-      <img class="card-img-top"  src="{{data?.imgPage}}">
-    </div>
+<!--    <div class="img_wrap">-->
+<!--      <img class="card-img-top"  src="{{data?.imgPage}}">-->
+<!--    </div>-->
 
-<div class="col-12 col-sm-6 second_col"    *ngFor="let blok of data?.bloks">
+<div class="col-12 col-sm-6 second_col"    *ngFor="let blok of data?.specifications">
 
 <!--  <div class="img_wrap">-->
 <!--             <img class="img_1" src="./assets/img/file%201.svg">-->
@@ -81,17 +30,14 @@
 
 </div>
 </div>
-
   </div>
+
     <div class="button_demo">
     <a href="{{data?.demo}}">
       <button mat-raised-button color="primary"  class="button_text" [disabled]="!data?.demo" > Демо </button>
     </a>
     </div>
 </div>
-
-
-
 
 
 

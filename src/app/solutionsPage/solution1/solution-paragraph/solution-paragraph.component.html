@@ -2,11 +2,21 @@
   <div class="solution_wrap">
     <div class="part">
       <div class="solution">
-        <h2 class="text">{{data?.title}}</h2>
+
+        <h2 class="page-title text-center" >ВОЗМОЖНОСТИ</h2>
       </div>
-      <div class="textabout">
-        <h2 class="solution_text">{{data?.text}}</h2>
-      </div>
+
+      <div class="blocktext "  *ngFor="let opportuniti of data?.opportunities" style="font-size: 2em">
+
+        <details>
+           <summary class="text"><strong>{{opportuniti?.name}}</strong></summary>
+           <h3 class="text_about">{{opportuniti?.description}}</h3>
+        </details>
+
+       </div>
+<!--      <div class="textabout">-->
+<!--        <h2 class="solution_text">{{data?.id}}</h2>-->
+<!--      </div>-->
     </div>
   </div>
 </main>

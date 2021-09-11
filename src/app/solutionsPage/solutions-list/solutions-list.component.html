@@ -5,13 +5,13 @@
 
 
       <div class="row">
-        <div class="col-12 col-sm-6 border-bottom border-secondary part" *ngFor="let solution of solutions">
+        <div class="col-12 col-sm-6 border-bottom border-secondary part" *ngFor="let specification of specifications">
           <div class="solutions_title">
-            <img *ngIf="solution.imgPage" src="{{solution.imgPage}}" class="card-img-top" alt="...">
-            <h2 class="text" *ngIf="solution.name">{{solution.name}}</h2>
+            <img *ngIf="specification .img" src="{{specification .img}}" class="card-img-top" alt="...">
+            <h2 class="text" *ngIf="specification .name">{{specification .name}}</h2>
           </div>
           <div>
-            <h3 class="text_about" *ngIf="solution.description">{{solution.description}}</h3>
+            <h3 class="text_about" *ngIf="specification .description">{{specification .description}}</h3>
 
             <div class="sfd">
               <a routerLink="/solution1" class="button_wrap">

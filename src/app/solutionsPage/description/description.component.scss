@@ -1,16 +1,8 @@
-.solution_title{
-  background-color: rgba(0, 27, 74, 0.08);
-}
-.solution_wrap{
+.solutions_wrap{
   padding: 3% 6%;
 }
-
-.blocktext{
-  margin-left: auto;
-  margin-right: auto;
-  width: 28em;
-  padding-bottom: 0.8em;
-
+.img2{
+  max-width: 100%;
 }
 .text{
   font-size: 20px;
@@ -18,22 +10,40 @@
   letter-spacing: 0.02em;
   font-weight: 600;
 }
-.solution_text{
+.bold_text{
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.list_wrap{
+  padding: 10% 0 0;
+}
+.list_item{
+  padding-bottom: 10%;
+}
+.list_item:last-child{
+  padding-bottom: 0;
+}
+.solutions_text_wrap{
+  margin: auto 0;
+}
+.solutions_text{
   color: #001B4A;
   font-size: 17px;
   line-height: 21px;
   letter-spacing: 0.02em;
   text-align: left;
   font-weight: 400;
-  margin-bottom: 0;
 }
+
 @media (max-width: 1280px) {
   .text{
     font-size: 17px;
     line-height: 21px;
     letter-spacing: 0.02em;
   }
-  .solution_text{
+  .solutions_text{
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.01em;
@@ -45,23 +55,43 @@
     line-height: 16px;
     letter-spacing: 0.01em;
   }
-  .solution_text{
+  .solutions_text{
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0;
   }
+  .bold_text{
+    font-size: 17px;
+    line-height: 21px;
+  }
 }
 @media (max-width: 768px) {
-  .solution_text{
+  .solutions_text{
     font-size: 10px;
     line-height: 13px;
+  }
+  .bold_text{
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
   }
 }
 @media (max-width: 576px) {
+  .img2{
+    max-width: 70%;
+  }
+  .img_wrap{
+    text-align: center;
+  }
   .text{
     font-size: 10px;
     line-height: 13px;
-    margin-bottom: 2%;
+  }
+  .list_wrap{
+    padding: 5% 0 0;
+  }
+  .number{
+    margin: 0;
+    padding: 0;
   }
 }
-

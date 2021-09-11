@@ -1,7 +1,7 @@
 <section class="projects">
   <div class="project_wrap">
     <div class="projects_title">
-      <h2 class="text">Решения</h2>
+        <h2 class="text">Информационно аналитическая платформа ProQ</h2>
     </div>
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -38,13 +38,13 @@
 
              *ngFor="let project of projects">
           <div class="row gx-1 gx-sm-5 slider_wrap">
-            <img src="{{project.imgPage}}" class="col-12 col-sm-6 d-block slider_img" alt="...">
+            <img src="{{project.img}}" class="col-12 col-sm-6 d-block slider_img" alt="...">
             <div class="col-12 col-sm-6 text_wrap">
               <p class="project_name" *ngIf="project.name">{{project.name}}</p>
               <p class="about_project" *ngIf="project.description">{{project.description}}</p>
 
               <div class="button_group">
-                <button mat-raised-button color="primary" class="button_text">Подробнее</button>
+                <button mat-raised-button color="primary" class="button_text" routerLink="/solutions">Подробнее</button>
                <a href="{{project?.demo}}">
                 <button mat-stroked-button color="primary"  class="button_text button_text_color ml-3" [disabled]="!project.demo" >Демо</button>
                </a>
