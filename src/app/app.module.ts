@@ -10,7 +10,7 @@ import { ContentComponent } from './homePage/content/content.component';
 import { HolderComponent } from './homePage/holder/holder.component';
 import { CompanyComponent } from './homePage/company/company.component';
 import { ClientsPartnersComponent } from './homePage/clients/clients-partners.component';
-import { ProjectsComponent } from './homePage/projects/projects.component';
+import { SolutionsComponent } from './homePage/solutions/solutions.component';
 import { FooterComponent } from './homePage/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -47,6 +47,8 @@ import { ProjectDetailsTitleComponent } from './projectsPage/project-details/pro
 import { ProjectDetailsListComponent } from './projectsPage/project-details/project-details-list/project-details-list.component';
 import { ProjectDetailsNoteComponent } from './projectsPage/project-details/project-details-note/project-details-note.component';
 import { ProjectDetailsParagraphComponent } from './projectsPage/project-details/project-details-paragraph/project-details-paragraph.component';
+import { DescriptionComponent } from './solutionsPage/description/description.component';
+import { SolutionOpportunitiesComponent } from './solutionsPage/solution-opportunities/solution-opportunities.component';
 
 /*import { MatIconModule } from '@angular/material/icon';
 
@@ -74,7 +76,7 @@ const routes = [
     HolderComponent,
     CompanyComponent,
     ClientsPartnersComponent,
-    ProjectsComponent,
+    SolutionsComponent,
     FooterComponent,
     ServicesPageComponent,
     HomePageComponent,
@@ -100,6 +102,8 @@ const routes = [
     ProjectDetailsListComponent,
     ProjectDetailsNoteComponent,
     ProjectDetailsParagraphComponent,
+    DescriptionComponent,
+    SolutionOpportunitiesComponent,
   ],
   imports: [
     BrowserModule,
