@@ -72,7 +72,13 @@
           </div>
         </div>
         <div>
-          <button onclick="window.location='mailto:info@proq.software?'" (click)="saveFrom()" mat-stroked-button class="button_text" color="primary">Отправить</button>
+          <button
+            *ngIf="!emailFormControl.hasError('email') &&
+             !emailFormControl.hasError('required')"
+            onclick="window.location='mailto:info@proq.software?'"
+            (click)="saveFrom()"
+            mat-stroked-button class="button_text"
+            color="primary">Отправить</button>
         </div>
 
       </form>
