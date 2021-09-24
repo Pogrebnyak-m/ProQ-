@@ -72,3 +72,18 @@
     line-height: 13px;
   }
 }
+.mat-raised-button{
+  background-color:  #001B4A;
+}
+//#001B4A;
+
+@media (max-width: 768px) {
+  .button_text{
+    font-size: 10px;
+    line-height: 25px;
+  }
+}
+//.button_text{
+//  font-size: 25px;
+//  line-height: 30px;
+//}
