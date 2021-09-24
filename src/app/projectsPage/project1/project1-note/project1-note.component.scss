@@ -1,0 +1,41 @@
+.project_wrap{
+  padding: 2% 6% 0;
+}
+.text_about{
+  color: #001B4A;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.col_wrap{
+  padding: 0;
+}
+@media (max-width: 1280px) {
+  .text_about{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+  }
+}
+@media (max-width: 980px) {
+  .text_about{
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 768px) {
+  .text_about{
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+}
+@media (max-width: 576px) {
+  .project_wrap{
+    padding: 3% 6%;
+  }
+}

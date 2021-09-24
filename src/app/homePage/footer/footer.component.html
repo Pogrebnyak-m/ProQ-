@@ -15,24 +15,24 @@
             <p class="contact_form"><strong>город Москва</strong><br /> переулок Ангелов, дом 6, этаж 1</p>
           </div>
 
-          <ul class="footer_socials socials">
-            <li class="socials_item">
-              <a class="socials_link" href="#">
-                <img alt="" class="socials_svg" src="../../../assets/img/instagram%201.svg">
-              </a>
-            </li>
-            <li class="socials_item">
-              <a class="socials_link" href="#">
-                <img alt="" class="socials_svg" src="../../../assets/img/facebook-logo%201.svg">
-              </a>
-            </li>
-            <li class="socials_item">
-              <a class="socials_link" href="#">
-                <img alt="" class="socials_svg" src="../../../assets/img/telegram-1.svg">
-              </a>
-            </li>
+<!--          <ul class="footer_socials socials">-->
+<!--            <li class="socials_item">-->
+<!--              <a class="socials_link" href="#">-->
+<!--                <img alt="" class="socials_svg" src="../../../assets/img/instagram%201.svg">-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="socials_item">-->
+<!--              <a class="socials_link" href="#">-->
+<!--                <img alt="" class="socials_svg" src="../../../assets/img/facebook-logo%201.svg">-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="socials_item">-->
+<!--              <a class="socials_link" href="#">-->
+<!--                <img alt="" class="socials_svg" src="../../../assets/img/telegram-1.svg">-->
+<!--              </a>-->
+<!--            </li>-->
 
-          </ul>
+<!--          </ul>-->
         </div>
       </div>
     </div>
@@ -40,9 +40,9 @@
 
     <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 contact_info">
       <div class=" contact_text second_col">Обратная связь</div>
-      <form [formGroup]="profileForm" class="form" action="mailto:">
+      <form [formGroup]="profileForm" class="form" action="mailto:info@proq.software">
         <div class="size-form">
-          <mat-form-field class="form-full-width" appearance="standard">
+          <mat-form-field name="subject" class="form-full-width" appearance="standard">
             <mat-label>Имя</mat-label>
             <input matInput>
           </mat-form-field>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div>
-          <button (click)="saveFrom()" mat-stroked-button class="button_text" color="primary">Отправить</button>
+          <button onclick="window.location='mailto:info@proq.software?'" (click)="saveFrom()" mat-stroked-button class="button_text" color="primary">Отправить</button>
         </div>
 
       </form>
