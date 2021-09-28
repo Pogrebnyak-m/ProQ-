@@ -260,7 +260,7 @@ export class ProjectDataService {
               id: 2,
               name: 'Заголовок',
               mark: '02',
-              description: 'Сотрудничество с разработчиком МИС qMS - СП.Арм.',
+              description: 'Сотрудничество с разработчиком МИС qMS - СП.АРМ.',
             },
             {
               id: 3,
@@ -449,7 +449,7 @@ export class ProjectDataService {
               id: 2,
               name: 'Заголовок',
               mark: '02',
-              description: 'Сотрудничество с разработчиком МИС qMS - СП.Арм.',
+              description: 'Сотрудничество с разработчиком МИС qMS - СП.АРМ.',
             },
             {
               id: 3,

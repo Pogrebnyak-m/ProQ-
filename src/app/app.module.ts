@@ -54,6 +54,7 @@ import { SolutionOpportunitiesComponent } from './solutionsPage/solution-opportu
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';*/
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 const routes = [
   {path: '', component: HomePageComponent},
@@ -119,6 +120,7 @@ const routes = [
     MatRadioModule,
     MatOptionModule,
     MatSelectModule,
+    LazyLoadImageModule,
     RouterModule.forRoot(routes)
     /*MatIconModule
     MatDividerModule,
