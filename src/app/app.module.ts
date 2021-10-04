@@ -55,8 +55,9 @@ import { SolutionOpportunitiesComponent } from './solutionsPage/solution-opportu
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';*/
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import {WebsiteModule} from './website/website.module';
 
-const routes = [
+/*const routes = [
   {path: '', component: HomePageComponent},
   {path: 'services', component: ServicesPageComponent},
   {path: 'solutions', component: SolutionsPageComponent},
@@ -65,7 +66,7 @@ const routes = [
   {path: 'footer', component: FooterComponent},
   {path: 'solution1', component: Solution1Component},
   {path: 'project', component: ProjectDetailsComponent}
-];
+];*/
 
 @NgModule({
   declarations: [
@@ -121,7 +122,8 @@ const routes = [
     MatOptionModule,
     MatSelectModule,
     LazyLoadImageModule,
-    RouterModule.forRoot(routes)
+    /*RouterModule.forRoot(routes),*/
+    WebsiteModule
     /*MatIconModule
     MatDividerModule,
     MatButtonModule*/
