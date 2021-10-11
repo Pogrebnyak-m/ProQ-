@@ -49,6 +49,11 @@ import { ProjectDetailsNoteComponent } from './projectsPage/project-details/proj
 import { ProjectDetailsParagraphComponent } from './projectsPage/project-details/project-details-paragraph/project-details-paragraph.component';
 import { DescriptionComponent } from './solutionsPage/description/description.component';
 import { SolutionOpportunitiesComponent } from './solutionsPage/solution-opportunities/solution-opportunities.component';
+import {Project1Component} from './projectsPage/project1/project1.component';
+import {Project1TitleComponent} from './projectsPage/project1/project1-title/project1-title.component';
+import {Project1NoteComponent} from './projectsPage/project1/project1-note/project1-note.component';
+import {Project1ListComponent} from './projectsPage/project1/project1-list/project1-list.component';
+import {Project1ParagraphComponent} from './projectsPage/project1/project1-paragraph/project1-paragraph.component';
 
 /*import { MatIconModule } from '@angular/material/icon';
 
@@ -106,6 +111,11 @@ import {WebsiteModule} from './website/website.module';
     ProjectDetailsParagraphComponent,
     DescriptionComponent,
     SolutionOpportunitiesComponent,
+    Project1Component,
+    Project1TitleComponent,
+    Project1NoteComponent,
+    Project1ListComponent,
+    Project1ParagraphComponent
   ],
   imports: [
     BrowserModule,
@@ -138,7 +148,7 @@ import {WebsiteModule} from './website/website.module';
     MatDividerModule,
     MatButtonModule*/
   ],
-  providers: [],
+  providers: [/*{ provide: LocationStrategy, useClass: PathLocationStrategy }*/],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
