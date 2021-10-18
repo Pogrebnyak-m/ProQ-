@@ -323,6 +323,7 @@ export const specifications = [
       'ИСТОЧНИКОВ ДАННЫХ',
     demo: 'http://proq.software/demo/',
     img: '../../../assets/img/Konsolidatiya.png',
+    imgDefault: '../../../assets/compressedImg/Konsolidatiya-min.png',
     description: 'Данный блок решает задачи миграции данных из различных источников и баз данных, в том числе из МИС qMS, их предварительной обработки и хранения.',
   },
   {
@@ -331,6 +332,7 @@ export const specifications = [
       'ОБРАБОТКИ ДАННЫХ',
     demo: '',
     img: '../../../assets/img/ObrabotkaDannix.png',
+    imgDefault: '../../../assets/compressedImg/ObrabotkaDannix-min.png',
     description: 'Современный и простой ETL-инструмент для реализации бизнес-логики обработки данных с применением технологий LOW-CODE',
   },
   {
@@ -338,6 +340,7 @@ export const specifications = [
     name: 'БЛОК ВЕБ-ИНТЕРФЕЙСОВ',
     demo: 'http://proq.software/demo-web/',
     img: '../../../assets/img/BlokVebInterfeisov.png',
+    imgDefault: '../../../assets/compressedImg/BlokVebInterfeisov-min.png',
     description: 'Извлекайте ценность из ваших данных быстрее с помощью аналитической платформы ProQ',
   },
 ];

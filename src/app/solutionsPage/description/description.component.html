@@ -7,13 +7,14 @@
       <div class="row">
         <div class="col-12 col-sm-6 gx-sm-5 gx-4 img_wrap">
           <img class="img2" src="../../../assets/img/proqProekt.png">
+          <img class="img2" [defaultImage]="'../../../assets/compressedImg/proqProekt-min.png'" [lazyLoad]="'../../../assets/img/proqProekt.png'">
         </div>
 
         <div class="col-12 col-sm-6 gx-sm-5 gx-4 solutions_text_wrap">
 
           <div class="list_wrap" *ngFor="let comment of comments">
             <div class="row list_item">
-         
+
               <div class="col-11 col-sm-10">
                 <h3 class="solutions_text" >{{comment?.description}}</h3>
               </div>

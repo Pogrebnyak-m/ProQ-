@@ -18,6 +18,7 @@ export class ProjectDataService {
         'работы регистратора, однако не всегда является качественным. Автоматизация процесса обновления данных позволила не только ' +
         'увеличить эффективность работы регистраторов, но и дать возможность дистанционной записи первичных пациентов к специалистам.',
       img: '../../../assets/img/apiVygryzka.png',
+      imgDefault: '../../../assets/compressedImg/apiVygryzka-min.png',
       comments: [
         {
           id: 1,
@@ -90,6 +91,7 @@ export class ProjectDataService {
         'информации и регулярного информационного обмена по заданным протоколам.' +
         '',
       img: '../../../assets/img/ArxitecteraIntegratii.png',
+      imgDefault: '../../../assets/compressedImg/ArxitecteraIntegratii-min.png',
 
       comments: [
         {
@@ -163,6 +165,7 @@ export class ProjectDataService {
         'информационного поиска и группировки медицинских записей в соответствии с требованиями к' +
         ' структурам данных со стороны ЕГИСЗ и спецификой МИС qMS.',
       img: '../../../assets/img/AnalitikZapros.png',
+      imgDefault: '../../../assets/compressedImg/AnalitikZapros-min.png',
       comments: [
         {
           id: 1,
@@ -234,6 +237,7 @@ export class ProjectDataService {
         ' записи и подготавливать их для машинного анализа.'
        ,
       img: '../../../assets/img/StroktyrirovanieProekt.png',
+      imgDefault: '../../../assets/compressedImg/StroktyrirovanieProekt-min.png',
       comments: [
         {
           id: 1,
@@ -292,6 +296,7 @@ export class ProjectDataService {
         ' Сокращение времени диагностики и простоя неисправного оборудования.\n' +
         'Консолидация информации о плановом сервисном обслуживании и ремонтных работах.',
       img: '../../../assets/img/MonitoringOborProekt.png',
+      imgDefault: '../../../assets/compressedImg/MonitoringOborProekt-min.png',
       comments: [  {
         id: 1,
         name: 'Заказчик:',
@@ -363,6 +368,7 @@ export class ProjectDataService {
         'На основе результатов лабораторных исследований мы разработали двухуровневую диагностическую модель,' +
         ' способную с высокой точностью определять ранние стадии сепсиса. ',
       img: '../../../assets/img/IiSepsis.png',
+      imgDefault: '../../../assets/compressedImg/IiSepsis-min.png',
       comments: [
         {
           id: 1,
@@ -422,6 +428,7 @@ export class ProjectDataService {
         'Наша специализация - анализ данных, однако мы имеем компетенции в реверс-инжиниринге ПО, ' +
         'системном администрировании, администрировании СУБД и разработке веб-приложений.',
       img: '../../../assets/img/VashProekt.png',
+      imgDefault: '../../../assets/compressedImg/VashProekt-min.png',
       comments: [
         {
           id: 1,

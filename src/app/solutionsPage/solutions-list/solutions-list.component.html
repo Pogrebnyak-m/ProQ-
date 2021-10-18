@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-12 col-sm-6 border-bottom border-secondary part" *ngFor="let specification of specifications">
           <div class="solutions_title">
-            <img *ngIf="specification .img" src="{{specification .img}}" class="card-img-top" alt="...">
+            <img *ngIf="specification .img" [defaultImage]="specification .imgDefault" [lazyLoad]="specification .img" class="card-img-top" alt="...">
             <h2 class="text" *ngIf="specification .name">{{specification .name}}</h2>
           </div>
           <div>

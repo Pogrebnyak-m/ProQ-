@@ -38,7 +38,7 @@
 
              *ngFor="let project of projects">
           <div class="row gx-1 gx-sm-5 slider_wrap">
-            <img src="{{project.img}}" class="col-12 col-sm-6 d-block slider_img" alt="...">
+            <img [defaultImage]="project.imgDefault" [lazyLoad]="project.img" class="col-12 col-sm-6 d-block slider_img" alt="...">
             <div class="col-12 col-sm-6 text_wrap">
               <p class="project_name" *ngIf="project.name">{{project.name}}</p>
               <p class="about_project" *ngIf="project.description">{{project.description}}</p>
