@@ -13,4 +13,15 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  Navigate(link: string = '') {
+    try {
+      if (link.length > 0) {
+        window.open(link, '_blank');
+      }
+
+    } catch (e) {
+
+    }
+  }
+
 }

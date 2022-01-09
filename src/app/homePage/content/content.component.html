@@ -2,7 +2,18 @@
   <div class="content_wrap">
     <div class="row justify-content-center justify-content-sm-start">
       <div class="col-12 col-md-6 gx-sm-5" *ngFor="let item of items">
-        <div class="row justify-content-start justify-content-md-between">
+        <div class="row justify-content-start justify-content-md-between" *ngIf="item.link.length==0">
+          <div class="col-2 img_wrap">
+            <img class="img1" [defaultImage]="'../../../assets/compressedImg/loading.png'" [lazyLoad]="item.img">
+          </div>
+          <div class="text1_container col-10">
+            <h2 class="text1" *ngIf="item.name">{{item.name}}</h2>
+          </div>
+        </div>
+        <div class="row justify-content-start justify-content-md-between"
+             *ngIf="item.link.length!=0"
+              style="cursor: pointer"
+              (click)="Navigate(item.link)">
           <div class="col-2 img_wrap">
             <img class="img1" [defaultImage]="'../../../assets/compressedImg/loading.png'" [lazyLoad]="item.img">
           </div>

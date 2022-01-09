@@ -358,7 +358,7 @@ export class ProjectDataService {
     },
     {
       id: 6,
-      name: 'Обнаружение  сепсиса на ранней стадии',
+      name: 'Sepsis AI: Обнаружение сепсиса на ранней стадии',
       description: 'С использованием алгоритмов машинного обучения стала' +
         ' возможна ранняя диагностика сепсиса',
       descriptionFull: ' Сегодня мы имеем уникальную возможность извлекать новые знания' +
@@ -366,19 +366,24 @@ export class ProjectDataService {
         ' сотен людей. Диагностика сепсиса на ранних стадиях - сложная задача даже для ' +
         'алгоритмов машинного обучения. ' +
         'На основе результатов лабораторных исследований мы разработали двухуровневую диагностическую модель,' +
-        ' способную с высокой точностью определять ранние стадии сепсиса. ',
+        ' способную с высокой точностью определять ранние стадии сепсиса.',
       img: '../../../assets/img/IiSepsis.png',
       imgDefault: '../../../assets/compressedImg/IiSepsis-min.png',
       comments: [
         {
           id: 1,
           name: 'ЯП:',
-          description: 'Python;',
+          description: 'Python, Cache Object Script;',
         },
         {
           id: 2,
           name: 'Технологии:',
-          description: 'Нейронные сети, Data Mining.',
+          description: 'Нейронные сети, Data Mining, Apache Airflow.',
+        },
+        {
+          id: 3,
+          name: 'Интеграции:',
+          description: 'InterSystems Cache, M. Base, мессенджер МИС qMS, Telegram',
         },
       ],
       partition1: {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ProjectDataService} from "../project-data.service";
 import {ActivatedRoute} from "@angular/router";
+import {Title} from "@angular/platform-browser";
 
 
 @Component({
@@ -10,7 +11,10 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProjectDetailsComponent implements OnInit {
 
-  constructor(public ps: ProjectDataService, private route: ActivatedRoute,) { }
+  constructor(
+    public ps: ProjectDataService,
+    private route: ActivatedRoute,
+    private titleService: Title) { }
   public row = {
     id: 1,
     name: 'Ошибка 404',
@@ -61,11 +65,12 @@ export class ProjectDetailsComponent implements OnInit {
     },
   };
   ngOnInit(): void {
-    var tmp = this.route.snapshot.paramMap.get('name');
+    let tmp = this.route.snapshot.paramMap.get('name');
     var rowArray = this.ps.Projects.filter(proj => proj.name === tmp);
     if (rowArray.length > 0 ){
       this.row = rowArray[0];
     }
+    this.titleService.setTitle(this.row.name);
   }
 
 }

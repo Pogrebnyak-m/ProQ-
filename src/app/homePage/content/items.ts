@@ -4,40 +4,46 @@ export const items = [
     name: 'Интеграция программных систем и продуктов',
     description: 'Умеем писать драйвера и реализовывать протоколы обмена информацией ' +
       'даже при отсутствии документации.',
-    img: '../../../assets/img/algorithm%202.svg'
+    img: '../../../assets/img/algorithm%202.svg',
+    link: ''
   },
   {
     id: 2,
     name: 'Анализ данных медицинских информационных систем',
     description: 'Проводим научные исследования в целях разработки систем помощи принятия ' +
       'врачебных решений.',
-    img: '../../../assets/img/api%201.svg'
+    img: '../../../assets/img/api%201.svg',
+    link: 'https://ml.proq.software/'
   },
   {
     id: 3,
     name: 'Разработка веб-приложений',
     description: 'Рисуем дизайн, верстаем по макетам, реализуем бизнес-логику в соответствии' +
       ' с мировыми стандартами программирования.',
-    img: '../../../assets/img/web%201.svg'
+    img: '../../../assets/img/web%201.svg',
+    link: ''
   },
   {
     id: 4,
     name: 'Аутстаффинг',
     description: 'Усилим Вашу команду квалифицированными разработчиками ПО: Cache Object Script, ' +
       'Golang, JavaScript.',
-    img: '../../../assets/img/file%201.svg'
+    img: '../../../assets/img/file%201.svg',
+    link: ''
   },
   {
     id: 5,
     name: 'Автоматизация бизнес-процессов',
     description: 'Снижаем трудозатраты на рутинные задачи путем автоматизации рабочего процесса.',
-    img: '../../../assets/img/software-development%201.svg'
+    img: '../../../assets/img/software-development%201.svg',
+    link: ''
   },
   {
     id: 6,
     name: 'Проектирование высоконагруженных систем.',
     description: 'Недовольны скоростью работы ПО? Увеличим производительность систем анализа ' +
       'и обработки данных.',
-    img: '../../../assets/img/network%201.svg'
+    img: '../../../assets/img/network%201.svg',
+    link: ''
   },
 ];
