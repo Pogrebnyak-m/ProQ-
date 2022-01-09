@@ -62,7 +62,7 @@ import { MatButtonModule } from '@angular/material/button';*/
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import {WebsiteModule} from './website/website.module';
 
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import {HashLocationStrategy, LocationStrategy, PathLocationStrategy} from '@angular/common';
 
 /*const routes = [
   {path: '', component: HomePageComponent},
@@ -150,7 +150,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MatDividerModule,
     MatButtonModule*/
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
