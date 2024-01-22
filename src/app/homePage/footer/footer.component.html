@@ -7,7 +7,7 @@
       <div class="footer_information">
         <div class="contact">
           <div class="contact_container">
-            <p class="contact_form"><strong>+7 (495) 147-79-11<br> info@proq.software</strong></p>
+            <p class="contact_form"><strong>info@proq.software</strong></p>
 
             <img class="img3" [defaultImage]="'../assets/compressedImg/loading.png'" [lazyLoad]="'../assets/img/FBlogotip.png'">
             <p class="contact_form"><strong>ООО "Флексибейс"</strong> <br> ИНН: 7733355085</p>
@@ -41,50 +41,50 @@
 
 
     <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 contact_info">
-      <div class=" contact_text second_col">Обратная связь</div>
-      <form [formGroup]="profileForm" class="form" action="mailto:info@proq.software">
-        <div class="size-form">
-          <mat-form-field name="subject" class="form-full-width" appearance="standard">
-            <mat-label>Имя</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-        <div>
-          <div class="size-form my-form-field">
-            <mat-form-field class="form-full-width" appearance="standard">
+<!--      <div class=" contact_text second_col">Обратная связь</div>-->
+<!--      <form [formGroup]="profileForm" class="form" action="mailto:info@proq.software">-->
+<!--        <div class="size-form">-->
+<!--          <mat-form-field name="subject" class="form-full-width" appearance="standard">-->
+<!--            <mat-label>Имя</mat-label>-->
+<!--            <input matInput>-->
+<!--          </mat-form-field>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--          <div class="size-form my-form-field">-->
+<!--            <mat-form-field class="form-full-width" appearance="standard">-->
 
-              <mat-error class="text1" *ngIf="emailFormControl.hasError('required')">
-                <strong>Требуется</strong> адрес электронной почты
-              </mat-error>
-              <mat-label>Email</mat-label>
-              <input type="email" matInput [formControl]="emailFormControl">
-            </mat-form-field>
-            <mat-error class="text" *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-              Пожалуйста, введите действительный адрес электронной почты.
-            </mat-error>
-          </div>
-        </div>
+<!--              <mat-error class="text1" *ngIf="emailFormControl.hasError('required')">-->
+<!--                <strong>Требуется</strong> адрес электронной почты-->
+<!--              </mat-error>-->
+<!--              <mat-label>Email</mat-label>-->
+<!--              <input type="email" matInput [formControl]="emailFormControl">-->
+<!--            </mat-form-field>-->
+<!--            <mat-error class="text" *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">-->
+<!--              Пожалуйста, введите действительный адрес электронной почты.-->
+<!--            </mat-error>-->
+<!--          </div>-->
+<!--        </div>-->
 
-        <div class="size-form">
-          <div class="textarea_wrap">
-            <mat-form-field class="form-full-width" appearance="standard">
-              <mat-label>Описание проекта</mat-label>
-              <textarea matInput></textarea>
-            </mat-form-field>
-          </div>
-        </div>
-        <div>
-          <button
-            *ngIf="!emailFormControl.hasError('email') &&
-             !emailFormControl.hasError('required')"
-            onclick="window.location='mailto:info@proq.software?'"
-            (click)="saveFrom()"
-            mat-stroked-button class="button_text"
-            color="primary">Отправить</button>
-        </div>
+<!--        <div class="size-form">-->
+<!--          <div class="textarea_wrap">-->
+<!--            <mat-form-field class="form-full-width" appearance="standard">-->
+<!--              <mat-label>Описание проекта</mat-label>-->
+<!--              <textarea matInput></textarea>-->
+<!--            </mat-form-field>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--          <button-->
+<!--            *ngIf="!emailFormControl.hasError('email') &&-->
+<!--             !emailFormControl.hasError('required')"-->
+<!--            onclick="window.location='mailto:info@proq.software?'"-->
+<!--            (click)="saveFrom()"-->
+<!--            mat-stroked-button class="button_text"-->
+<!--            color="primary">Отправить</button>-->
+<!--        </div>-->
 
-      </form>
-    </div>
+<!--      </form>-->
+<!--    </div>-->
   </div>
 </div>
 
