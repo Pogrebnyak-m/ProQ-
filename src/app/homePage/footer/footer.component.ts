@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder} from '@angular/forms';
-import {FormControl, Validators} from '@angular/forms';
+import {UntypedFormBuilder} from '@angular/forms';
+import {UntypedFormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
@@ -8,12 +8,12 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  emailFormControl = new FormControl('', [
+  emailFormControl = new UntypedFormControl('', [
     Validators.required,
     Validators.email,
   ]);
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: UntypedFormBuilder) { }
 
   profileForm = this.formBuilder.group({
     firstName: [''],

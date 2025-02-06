@@ -423,6 +423,38 @@ export class ProjectDataService {
           ' Отличительная особенность наших выгрузок - JSON, который может быть ' +
           'не только конвертирован в привычный табличный вид, но и полезен программистам и аналитикам.'
       },
+    },{
+      id: 8,
+      name: 'BotFarm: Цифровые помощники для предпринимателей',
+      description: '...',
+      descriptionFull: '...',
+      img: '../../../assets/compressedImg/botFarm-logo.png',
+      link: 'https://botfarm.online/',
+      imgDefault: '...',
+      comments: [
+        {
+          id: 1,
+          name: '...',
+          description: '...',
+        },
+      ],
+      partition1: {
+        title: '..',
+        points:
+          [
+            {
+              id: 1,
+              name: '...',
+              mark: '...',
+              description: '...',
+            },
+          ]
+      },
+      paragraph: {
+        name: '...',
+        text: '...'
+      },
+
     },
     {
       id: 7,
